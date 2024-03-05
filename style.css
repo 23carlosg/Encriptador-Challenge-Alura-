@@ -1,0 +1,317 @@
+:root {
+    --azul-oscuro: #052979;
+    --btn-color: aliceblue;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+    body {
+        background: var(--btn-color);
+        height: 100vh;
+    }
+
+    main {
+        height: 95%;
+    }
+
+    .texto-ingresado {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    textarea {
+        border-style: none;
+        background: var(--btn-color);
+        padding: 2%;
+    }
+
+    .texto-ingresado textarea {
+        border-style: none;
+        height: 60%;
+        width: 90%;
+        background: var(--btn-color);
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--azul-oscuro);
+    }
+
+    .texto-ingresado textarea::placeholder {
+        font-size: 22px;
+        color: var(--azul-oscuro);
+    }
+
+    .texto-ingresado p {
+        display: block;
+        color: var(--azul-oscuro);
+        height: 5%;
+        width: 90%;
+        margin: 0 0 0 0;
+        font-size: 12px;
+    }
+
+    .texto-ingresado p:before {
+        content: url(imagenes/exclamation_circle_icon_152848.png);
+        vertical-align: middle;
+    }
+
+    .texto-ingresado div {
+        height: 30%;
+        width: 90%;
+    }
+
+    .texto-ingresado button {
+        border-radius: 14px;
+        height: 40%;
+        width: 100%;
+        border: .5px solid var(--azul-oscuro);
+        display: block;
+        margin-top: 3%;
+        cursor: pointer;
+    }
+
+    .texto-ingresado button:first-of-type {
+        color: var(--btn-color);
+        background: var(--azul-oscuro);
+
+    }
+
+    .botones button:nth-last-of-type() {
+        color: black;
+    }
+
+    .texto-salida {
+        height: 20%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-salida textarea {
+        height: 70%;
+        width: 90%;
+        background: white;
+        border-radius: 25px;
+        box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2), -1px -1px 15px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+
+        position: absolute;
+        bottom: 0;
+        height: 5%;
+        width: 100%;
+        background: rgb(42, 71, 125);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        height: 90%;
+    }
+
+    .texto-ingresado {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea {
+        border-style: none;
+        background: var(--btn-color);
+    }
+
+    .texto-ingresado textarea {
+        border-style: none;
+        height: 85%;
+        width: 80%;
+        background: var(--btn-color);
+        position: relative;
+    }
+
+    .texto-ingresado textarea::placeholder {
+        font-size: 28px;
+        color: var(--azul-oscuro);
+    }
+
+    .texto-ingresado p {
+        display: block;
+        color: var(--azul-oscuro);
+        height: 5%;
+        width: 80%;
+        margin: 0 0 0 0;
+    }
+
+    .texto-ingresado p:before {
+        content: url(imagenes/exclamation_circle_icon_152848.png);
+        vertical-align: middle;
+    }
+
+    .texto-ingresado div {
+        height: 10%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .texto-ingresado button {
+        font-size: 1em;
+        border-radius: 18px;
+        height: 80%;
+        width: 50%;
+        border: .5px solid var(--azul-oscuro);
+        margin-top: 0;
+    }
+
+    .texto-ingresado button:first-of-type {
+        color: var(--btn-color);
+        background: var(--azul-oscuro);
+
+    }
+
+    .botones button:nth-last-of-type() {
+        color: black;
+    }
+
+    .texto-salida {
+        height: 30%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .texto-salida textarea {
+        height: 70%;
+        width: 80%;
+        background: white;
+        border-radius: 25px;
+        box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2), -1px -1px 15px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        height: 10%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background: var(--btn-color);
+        height: 100vh;
+    }
+
+    main {
+        height: 100%;
+        display: flex;
+    }
+
+    .texto-ingresado {
+        height: 90%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea {
+        border-style: none;
+        background: var(--btn-color);
+    }
+
+    .texto-ingresado textarea {
+        border-style: none;
+        height: 75%;
+        width: 80%;
+        background: var(--btn-color);
+        position: relative;
+    }
+
+    .texto-ingresado textarea::placeholder {
+        font-size: 32px;
+        color: var(--azul-oscuro);
+    }
+
+    .texto-ingresado p {
+        display: block;
+        color: var(--azul-oscuro);
+        height: 5%;
+        width: 80%;
+        margin: 0 0 0 0;
+    }
+
+    .texto-ingresado p:before {
+        content: url(imagenes/exclamation_circle_icon_152848.png);
+        vertical-align: middle;
+    }
+
+    .texto-ingresado div {
+        height: 10%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .texto-ingresado button {
+        font-size: 1em;
+        border-radius: 14px;
+        height: 80%;
+        width: 50%;
+        border: .5px solid var(--azul-oscuro);
+        margin-top: 0;
+    }
+
+    .texto-ingresado button:first-of-type {
+        color: var(--btn-color);
+        background: var(--azul-oscuro);
+
+    }
+
+    .botones button:nth-last-of-type() {
+        color: black;
+    }
+
+    .texto-salida {
+        height: 90%;
+        width: 35%;
+        margin-top: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-salida textarea {
+        height: 90%;
+        width: 85%;
+        background: white;
+        border-radius: 25px;
+        box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2), -1px -1px 15px 1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+footer p {
+    color: white;
+    font-size: 1em;
+}
+
